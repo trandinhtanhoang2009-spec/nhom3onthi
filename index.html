@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="Góc ôn thi tốt nghiệp THPT: Toán, Ngữ văn, Tiếng Anh và Tin học. Bài học ngắn, ví dụ dễ hiểu, đề luyện tự chấm và nguồn Bộ GDĐT.">
+  <title>Ôn Nhẹ — Học chắc từng bước</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%231d3941'/%3E%3Cpath d='M15 17c8-3 14-1 17 2v30c-4-4-10-5-17-2V17Zm34 0c-8-3-14-1-17 2v30c4-4 10-5 17-2V17Z' fill='none' stroke='%23eff3d1' stroke-width='3' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="content.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua phần điều hướng</a>
+
+  <div class="top-note">
+    <span class="top-note-dot" aria-hidden="true"></span>
+    <span>Ôn theo định hướng kỳ thi tốt nghiệp THPT · Chương trình GDPT 2018</span>
+    <a href="#nguon">Xem nguồn chính thức <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Ôn Nhẹ, về đầu trang">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 42 42" role="img">
+            <path d="M7 10.5c5.4-2.4 10.1-1.9 14 1.4v22c-3.9-3.3-8.6-3.8-14-1.4v-22Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M35 10.5c-5.4-2.4-10.1-1.9-14 1.4v22c3.9-3.3 8.6-3.8 14-1.4v-22Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
+            <path d="M12 17h5M12 22h5M25 17h5M25 22h5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy"><strong>Ôn Nhẹ</strong><small>Học chắc từng bước</small></span>
+      </a>
+
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primaryNav" aria-label="Điều hướng chính">
+        <a href="#mon-hoc">Môn học</a>
+        <a href="#hoc-lieu">Bài học</a>
+        <a href="#luyen-de">Luyện đề</a>
+        <a href="#nguon">Nguồn tham khảo</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" id="themeToggle" type="button" aria-label="Chuyển giao diện sáng tối" title="Đổi giao diện">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="profile-button" id="profileButton" type="button">
+          <span class="profile-avatar" id="profileAvatar" aria-hidden="true">K</span>
+          <span id="profileButtonText">Học với tư cách khách</span>
+          <span class="profile-chevron" aria-hidden="true">⌄</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero-section" id="home" aria-labelledby="heroTitle">
+      <div class="hero-orb hero-orb-one" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-two" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-star" aria-hidden="true">✳</span> GÓC ÔN THI TỐT NGHIỆP THPT</div>
+          <h1 id="heroTitle">Học chắc từng bước.<br><span>Vững vàng ngày thi.</span></h1>
+          <p class="hero-lede">Toán, Ngữ văn, Tiếng Anh và Tin học — kiến thức chia nhỏ, ví dụ rõ ràng, bài luyện có giải thích. Học theo nhịp của bạn, không cần học thuộc máy móc.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#hoc-lieu">Bắt đầu ôn tập <span aria-hidden="true">↘</span></a>
+            <a class="button button-outline-light" href="#luyen-de">Làm bài kiểm tra <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="hero-proof">
+            <span class="proof-check" aria-hidden="true">✓</span>
+            <span>Bạn có thể học thử ngay, không cần tạo tài khoản</span>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Minh họa sách, lịch học và mục tiêu ôn tập">
+          <div class="art-spark spark-a" aria-hidden="true">✦</div>
+          <div class="art-spark spark-b" aria-hidden="true">✳</div>
+          <div class="art-note art-note-top"><span class="note-dot"></span> Kế hoạch hôm nay <b>03 việc</b></div>
+          <div class="book-illustration">
+            <div class="book-page book-left">
+              <span class="book-label">GHI NHỚ</span>
+              <span class="book-line book-line-short"></span>
+              <span class="book-line"></span>
+              <span class="book-line book-line-mid"></span>
+              <span class="book-highlight"></span>
+              <span class="book-line"></span>
+              <span class="book-line book-line-short"></span>
+            </div>
+            <div class="book-page book-right">
+              <span class="formula-pill">f′(x) = 0</span>
+              <span class="mini-graph"><i></i><b></b><em></em></span>
+              <span class="book-line book-line-mid"></span>
+              <span class="book-line"></span>
+              <span class="book-line book-line-short"></span>
+            </div>
+            <div class="book-spine"></div>
+          </div>
+          <div class="art-note art-note-bottom"><span class="tiny-check">✓</span> Hiểu rồi mới nhớ lâu</div>
+          <div class="art-sticker" aria-hidden="true">04<br><small>MÔN<br>HỌC</small></div>
+        </div>
+      </div>
+      <div class="hero-footer-line" aria-hidden="true"><span></span><span></span><span></span></div>
+    </section>
+
+    <section class="quick-facts" aria-label="Thông tin nhanh">
+      <div class="quick-fact"><strong>04</strong><span>môn ôn tập</span></div>
+      <div class="quick-divider" aria-hidden="true"></div>
+      <div class="quick-fact"><strong id="lessonTotal">16</strong><span>bài học ngắn</span></div>
+      <div class="quick-divider" aria-hidden="true"></div>
+      <div class="quick-fact"><strong>04</strong><span>đề luyện mẫu</span></div>
+      <div class="quick-note"><span class="quick-note-icon" aria-hidden="true">✦</span><span>Kiến thức dễ đọc, có ví dụ và cách tự kiểm tra</span></div>
+    </section>
+
+    <section class="section subjects-section" id="mon-hoc" aria-labelledby="subjectsTitle">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow eyebrow-dark"><span class="section-number">01</span> CHỌN MÔN HỌC</div>
+          <h2 id="subjectsTitle">Bốn môn, một lộ trình rõ ràng.</h2>
+          <p class="section-intro">Mở môn bạn muốn ôn. Mỗi thẻ cho biết thời gian làm bài và các chủ đề chính.</p>
+        </div>
+        <div class="progress-summary" aria-live="polite">
+          <div class="progress-summary-top"><span>Tiến độ của bạn</span><strong id="overallProgressText">0%</strong></div>
+          <div class="progress-track"><span id="overallProgressBar"></span></div>
+          <small id="progressHint">Hoàn thành một bài học để bắt đầu ghi nhận tiến độ.</small>
+        </div>
+      </div>
+      <div class="subject-grid" id="subjectGrid"></div>
+      <div class="format-note">
+        <span class="format-note-icon" aria-hidden="true">i</span>
+        <p><strong>Lưu ý về cấu trúc:</strong> Toán và Ngữ văn là hai môn bắt buộc; thí sinh chọn thêm hai môn. Thời lượng tham khảo: Toán 90 phút, Ngữ văn 120 phút, các môn trắc nghiệm khác 50 phút. Xem thông báo Bộ GDĐT tại <a href="#nguon">Nguồn tham khảo</a>.</p>
+      </div>
+    </section>
+
+    <section class="section lessons-section" id="hoc-lieu" aria-labelledby="lessonsTitle">
+      <div class="section-heading lessons-heading">
+        <div>
+          <div class="eyebrow eyebrow-dark"><span class="section-number">02</span> KHO BÀI HỌC</div>
+          <h2 id="lessonsTitle">Kiến thức gọn, ví dụ thật rõ.</h2>
+          <p class="section-intro">Tìm theo tên bài hoặc lọc theo môn. Có thể lưu bài để xem lại sau.</p>
+        </div>
+        <button class="button button-dark" id="addLessonButton" type="button"><span aria-hidden="true">＋</span> Thêm kiến thức</button>
+      </div>
+
+      <div class="lesson-toolbar">
+        <div class="filter-row" id="filterButtons" role="group" aria-label="Lọc bài học theo môn"></div>
+        <label class="search-box">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <span class="visually-hidden">Tìm bài học</span>
+          <input id="lessonSearch" type="search" placeholder="Tìm bài học, chủ đề…" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+      </div>
+      <div class="lesson-meta"><span id="lessonCountText">Đang hiển thị 16 bài học</span><button id="clearSearchButton" class="text-button" type="button" hidden>Xóa tìm kiếm</button></div>
+      <div class="lesson-grid" id="lessonGrid"></div>
+      <div class="empty-state" id="emptyLessons" hidden>
+        <span aria-hidden="true">⌕</span><strong>Chưa tìm thấy bài học phù hợp</strong><p>Thử một từ khóa khác hoặc chọn lại bộ lọc “Tất cả”.</p>
+      </div>
+    </section>
+
+    <section class="practice-section" id="luyen-de" aria-labelledby="practiceTitle">
+      <div class="practice-wrap">
+        <div class="practice-heading">
+          <div>
+            <div class="eyebrow eyebrow-light"><span class="section-number section-number-light">03</span> LUYỆN TẬP</div>
+            <h2 id="practiceTitle">Thử sức một đề ngắn.</h2>
+            <p>Mỗi bài có đồng hồ và phần giải thích sau khi nộp. Đề Văn có phiếu tự đánh giá, không chấm máy móc.</p>
+          </div>
+          <div class="practice-stamp" aria-hidden="true"><span>LUYỆN</span><b>✦</b><span>ĐỀU</span></div>
+        </div>
+        <div class="test-grid" id="testGrid"></div>
+        <p class="practice-footnote"><span aria-hidden="true">✳</span> Các bài luyện trên trang là câu hỏi tự biên soạn để ôn tập, không phải đề thi chính thức của Bộ GDĐT.</p>
+      </div>
+    </section>
+
+    <section class="section study-rhythm" aria-labelledby="rhythmTitle">
+      <div class="rhythm-copy">
+        <div class="eyebrow eyebrow-dark"><span class="section-number">04</span> HỌC VỪA SỨC</div>
+        <h2 id="rhythmTitle">Một lượt tập trung,<br>một việc hoàn thành.</h2>
+        <p>Chọn một chủ đề, học trong 25 phút, nghỉ ngắn rồi tự làm vài câu. Nhịp đều đặn thường dễ duy trì hơn học dồn.</p>
+        <div class="rhythm-steps">
+          <div><span>01</span><p><strong>Chọn một mục tiêu</strong><small>Ví dụ: hiểu điều kiện logarit.</small></p></div>
+          <div><span>02</span><p><strong>Học và ghi lại ý chính</strong><small>Chỉ cần 3–5 dòng bằng lời của bạn.</small></p></div>
+          <div><span>03</span><p><strong>Làm câu hỏi rồi xem lỗi</strong><small>Sai câu nào, ghi lại vì sao sai.</small></p></div>
+        </div>
+      </div>
+      <div class="focus-card">
+        <div class="focus-card-top"><span class="focus-label"><span class="live-dot"></span> ĐỒNG HỒ TẬP TRUNG</span><span class="focus-small">PHIÊN 25 PHÚT</span></div>
+        <div class="focus-clock" id="focusTime" aria-live="polite">25:00</div>
+        <p id="focusMessage">Sẵn sàng cho một lượt học nhẹ nhàng?</p>
+        <div class="focus-controls">
+          <button class="button button-lime focus-start" id="focusStartButton" type="button">Bắt đầu</button>
+          <button class="button button-outline-light focus-reset" id="focusResetButton" type="button">Đặt lại</button>
+        </div>
+        <div class="focus-progress"><span id="focusProgressBar"></span></div>
+        <div class="focus-bottom"><span>Không cần hoàn hảo.</span><span>Chỉ cần bắt đầu.</span></div>
+        <div class="focus-decoration" aria-hidden="true">25</div>
+      </div>
+    </section>
+
+    <section class="source-section" id="nguon" aria-labelledby="sourceTitle">
+      <div class="source-inner">
+        <div class="source-intro">
+          <div class="eyebrow eyebrow-dark"><span class="section-number">05</span> NGUỒN THAM KHẢO</div>
+          <h2 id="sourceTitle">Học liệu rõ nguồn, ôn tập đúng hướng.</h2>
+          <p>Nội dung giải thích và câu hỏi luyện tập do nhóm tự biên soạn để dễ học. Cấu trúc kỳ thi, đề tham khảo và đáp án chính thức được dẫn về Bộ GDĐT/Cục Quản lý chất lượng.</p>
+          <div class="source-callout"><span aria-hidden="true">↗</span><span>Đề luyện trên trang không thay thế đề thi chính thức. Hãy mở nguồn gốc để xem đầy đủ tài liệu.</span></div>
+        </div>
+        <div class="source-list" id="sourceList"></div>
+      </div>
+    </section>
+
+    <section class="feedback-band" id="gop-y" aria-labelledby="feedbackTitle">
+      <div class="feedback-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 64"><path d="M8 15h48v33H8z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="m10 18 22 17 22-17" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M22 45h20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="feedback-copy">
+        <div class="eyebrow eyebrow-dark">GÓP Ý ĐỂ TRANG TỐT HƠN</div>
+        <h2 id="feedbackTitle">Bạn thấy bài nào cần giải thích thêm?</h2>
+        <p>Gửi nhận xét qua email hoặc để lại bình luận ngay dưới bài học. Tụi mình rất muốn nghe góp ý của bạn.</p>
+      </div>
+      <button class="button button-dark" id="feedbackButton" type="button">Gửi góp ý qua email <span aria-hidden="true">→</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="nhom">
+    <div class="footer-top">
+      <div class="footer-about">
+        <a class="brand brand-footer" href="#home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 42 42"><path d="M7 10.5c5.4-2.4 10.1-1.9 14 1.4v22c-3.9-3.3-8.6-3.8-14-1.4v-22Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M35 10.5c-5.4-2.4-10.1-1.9-14 1.4v22c3.9-3.3 8.6-3.8 14-1.4v-22Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="brand-copy"><strong>Ôn Nhẹ</strong><small>Học chắc từng bước</small></span>
+        </a>
+        <p>Một góc học tập nhỏ dành cho những ngày ôn thi. Kiến thức dễ hiểu, tự luyện có lời giải, tiến bộ theo nhịp riêng.</p>
+        <a class="footer-mail" href="#gop-y" id="footerFeedbackLink">Gửi lời nhắn cho nhóm <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="team-area">
+        <div class="team-heading"><div><span class="eyebrow eyebrow-light">NHỮNG NGƯỜI LÀM TRANG</span><h2>Nhóm Ôn Nhẹ</h2></div><span class="team-heading-note">Ảnh minh họa<br>thành viên</span></div>
+        <div class="team-grid">
+          <figure class="team-member">
+            <div class="member-portrait portrait-teal" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="45" cy="45" r="44" fill="#b9e4d7"/><path d="M19 79c3-17 13-25 26-25s23 8 26 25" fill="#226b65"/><path d="M29 34c0-13 7-21 17-21 12 0 18 9 17 24-1 12-7 20-18 20-10 0-16-9-16-23Z" fill="#a96d4a"/><path d="M28 35c-3-12 2-25 15-28 14-3 24 8 22 23-6-2-11-7-14-12-4 8-12 13-23 17Z" fill="#283638"/><path d="M39 39h2m10 0h2" stroke="#302421" stroke-width="2.5" stroke-linecap="round"/><path d="M40 47c3 3 7 3 10 0" fill="none" stroke="#773e38" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <figcaption>Tiến Hùng</figcaption>
+          </figure>
+          <figure class="team-member">
+            <div class="member-portrait portrait-peach" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="45" cy="45" r="44" fill="#f5cfb9"/><path d="M17 83c4-17 14-27 28-27s24 10 28 27" fill="#496d85"/><path d="M27 35c0-15 7-24 19-24 13 0 19 10 17 27-1 12-8 19-18 19S27 49 27 35Z" fill="#d4946b"/><path d="M26 35c-4-13 2-27 16-30 15-3 25 9 21 24-6-3-11-8-14-15-5 10-12 16-23 21Z" fill="#49362c"/><path d="M37 39h2m11 0h2" stroke="#38251f" stroke-width="2.5" stroke-linecap="round"/><path d="M39 48c3 2 7 2 10-1" fill="none" stroke="#844a41" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <figcaption>Đắc Kiên</figcaption>
+          </figure>
+          <figure class="team-member">
+            <div class="member-portrait portrait-lilac" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="45" cy="45" r="44" fill="#ded6f5"/><path d="M17 83c3-18 14-26 28-26s25 8 28 26" fill="#a66e9a"/><path d="M28 36c0-15 6-24 18-24 12 0 18 9 18 24 0 13-7 21-18 21-10 0-18-9-18-21Z" fill="#f0bd94"/><path d="M25 39c-2-18 5-30 18-32 15-2 24 10 22 29-4-3-6-8-7-15-5 7-16 12-32 13Z" fill="#382c37"/><path d="M37 40h2m11 0h2" stroke="#34242b" stroke-width="2.5" stroke-linecap="round"/><path d="M39 48c4 3 8 3 12 0" fill="none" stroke="#9a585a" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <figcaption>Anh Khuê</figcaption>
+          </figure>
+          <figure class="team-member">
+            <div class="member-portrait portrait-yellow" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="45" cy="45" r="44" fill="#f0e4a8"/><path d="M17 82c3-17 14-26 28-26s25 9 28 26" fill="#4d8475"/><path d="M28 36c0-14 7-23 18-23 12 0 18 9 18 24 0 13-7 20-18 20-10 0-18-8-18-21Z" fill="#ba805b"/><path d="M27 34c1-16 8-25 21-25 13 0 21 11 17 27-5-2-9-7-12-14-6 8-14 12-26 12Z" fill="#202e2f"/><path d="M38 40h2m11 0h2" stroke="#2c2822" stroke-width="2.5" stroke-linecap="round"/><path d="M40 48c3 2 7 2 10-1" fill="none" stroke="#7d4840" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <figcaption>Anh Hoàng</figcaption>
+          </figure>
+          <figure class="team-member">
+            <div class="member-portrait portrait-blue" aria-hidden="true"><svg viewBox="0 0 90 90"><circle cx="45" cy="45" r="44" fill="#c7dcee"/><path d="M17 83c4-17 14-26 28-26s24 9 28 26" fill="#6a668c"/><path d="M28 35c0-14 6-23 18-23s19 9 18 24c-1 13-7 21-18 21S28 49 28 35Z" fill="#d9a27e"/><path d="M27 34c-1-14 5-26 18-28 15-2 24 10 20 26-8-4-14-10-17-16-4 9-11 15-21 18Z" fill="#4a3832"/><path d="M37 40h2m11 0h2" stroke="#372720" stroke-width="2.5" stroke-linecap="round"/><path d="M39 48c3 3 7 3 11 0" fill="none" stroke="#8b5149" stroke-width="2" stroke-linecap="round"/></svg></div>
+            <figcaption>Nhật Khánh</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="currentYear">2026</span> Ôn Nhẹ · Dự án học tập của nhóm.</span>
+      <span class="footer-disclaimer">Kiến thức và đề luyện do nhóm biên soạn; không phải sản phẩm của Bộ GDĐT.</span>
+      <a href="#home">Lên đầu trang ↑</a>
+    </div>
+  </footer>
+
+  <dialog class="app-dialog lesson-dialog" id="lessonDialog" aria-labelledby="lessonDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header">
+        <div><span class="dialog-kicker" id="lessonDialogKicker">BÀI HỌC</span><h2 id="lessonDialogTitle">Tên bài học</h2></div>
+        <button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">×</button>
+      </div>
+      <div class="dialog-scroll" id="lessonDialogBody"></div>
+    </div>
+  </dialog>
+
+  <dialog class="app-dialog quiz-dialog" id="quizDialog" aria-labelledby="quizDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header quiz-dialog-header">
+        <div><span class="dialog-kicker" id="quizDialogKicker">BÀI LUYỆN</span><h2 id="quizDialogTitle">Đề luyện</h2></div>
+        <div class="quiz-header-right"><div class="quiz-timer" id="quizTimer" aria-live="off">00:00</div><button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">×</button></div>
+      </div>
+      <div class="dialog-scroll quiz-dialog-scroll">
+        <div id="quizIntro" class="quiz-intro"></div>
+        <div id="quizQuestions" class="quiz-questions"></div>
+        <div id="quizResult" class="quiz-result" hidden></div>
+      </div>
+      <div class="quiz-footer" id="quizFooter"><span id="quizProgressText">Chọn đáp án rồi nộp bài để xem giải thích.</span><button class="button button-dark" id="submitQuizButton" type="button">Nộp bài <span aria-hidden="true">→</span></button></div>
+    </div>
+  </dialog>
+
+  <dialog class="app-dialog compact-dialog" id="profileDialog" aria-labelledby="profileDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header"><div><span class="dialog-kicker">HỒ SƠ HỌC TẬP</span><h2 id="profileDialogTitle">Học theo cách của bạn.</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">×</button></div>
+      <div class="dialog-scroll">
+        <p class="dialog-lede">Bạn có thể tiếp tục học với tư cách khách hoặc lưu tên hiển thị trên thiết bị này.</p>
+        <form id="profileForm" class="stack-form">
+          <label>Tên hiển thị<input id="profileNameInput" name="name" type="text" maxlength="32" placeholder="Ví dụ: Minh Anh" required></label>
+          <label>Email (không bắt buộc)<input id="profileEmailInput" name="email" type="email" placeholder="ban@example.com"></label>
+          <button class="button button-dark form-submit" type="submit">Lưu hồ sơ trên thiết bị</button>
+        </form>
+        <div class="local-data-note"><strong>Riêng tư:</strong> Đây là hồ sơ dùng thử lưu trong trình duyệt, không phải tài khoản trực tuyến và không có máy chủ đăng nhập. Bình luận, tiến độ và bài tự thêm cũng chỉ lưu trên thiết bị này.</div>
+        <button class="text-button guest-button" id="guestModeButton" type="button">Tiếp tục không đăng nhập</button>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="app-dialog compact-dialog" id="addLessonDialog" aria-labelledby="addLessonDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header"><div><span class="dialog-kicker">CẬP NHẬT HỌC LIỆU</span><h2 id="addLessonDialogTitle">Thêm ghi chú của bạn.</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">×</button></div>
+      <div class="dialog-scroll">
+        <p class="dialog-lede">Bài tự thêm sẽ hiện trên trình duyệt này. Muốn cập nhật cho mọi người, hãy chỉnh <code>content.js</code> rồi đẩy thay đổi lên GitHub.</p>
+        <form id="addLessonForm" class="stack-form">
+          <label>Môn học<select name="subject" id="customSubject" required><option value="math">Toán</option><option value="literature">Ngữ văn</option><option value="english">Tiếng Anh</option><option value="informatics">Tin học</option></select></label>
+          <label>Tên bài<input name="title" type="text" maxlength="90" placeholder="Ví dụ: Cách nhận biết câu bị động" required></label>
+          <label>Chủ đề nhỏ<input name="category" type="text" maxlength="45" placeholder="Ví dụ: Ngữ pháp" required></label>
+          <label>Ý chính cần nhớ<textarea name="body" rows="4" maxlength="1600" placeholder="Viết bằng lời dễ hiểu, chia ý rõ ràng…" required></textarea></label>
+          <label>Ví dụ hoặc lưu ý thêm<textarea name="example" rows="3" maxlength="1000" placeholder="Không bắt buộc"></textarea></label>
+          <button class="button button-dark form-submit" type="submit">Lưu bài trên thiết bị <span aria-hidden="true">→</span></button>
+        </form>
+        <div class="backup-row"><div><strong>Chuyển ghi chú sang máy khác</strong><small>Tải xuống hoặc nhập bản sao lưu JSON.</small></div><div class="backup-buttons"><button class="button button-soft" id="exportDataButton" type="button">Xuất dữ liệu</button><button class="button button-soft" id="importDataButton" type="button">Nhập dữ liệu</button><input id="importDataInput" type="file" accept="application/json,.json" hidden></div></div>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="app-dialog compact-dialog" id="feedbackDialog" aria-labelledby="feedbackDialogTitle">
+    <div class="dialog-shell">
+      <div class="dialog-header"><div><span class="dialog-kicker">GỬI Ý KIẾN</span><h2 id="feedbackDialogTitle">Tụi mình đang lắng nghe.</h2></div><button class="dialog-close" type="button" data-close-dialog aria-label="Đóng">×</button></div>
+      <div class="dialog-scroll">
+        <p class="dialog-lede">Điền email nhóm nhận góp ý và nội dung. Nút gửi sẽ mở ứng dụng email trên thiết bị để bạn xem lại rồi gửi.</p>
+        <form id="feedbackForm" class="stack-form">
+          <label>Email nhóm nhận góp ý<input id="feedbackRecipient" type="email" placeholder="Nhập email nhận góp ý" required></label>
+          <label>Email của bạn (không bắt buộc)<input id="feedbackSender" type="email" placeholder="ban@example.com"></label>
+          <label>Chủ đề<select id="feedbackSubject"><option>Góp ý nội dung bài học</option><option>Báo lỗi website</option><option>Đề xuất tính năng</option><option>Khác</option></select></label>
+          <label>Nội dung<textarea id="feedbackMessage" rows="5" maxlength="2500" placeholder="Bạn muốn nhóm bổ sung hoặc sửa điều gì?" required></textarea></label>
+          <p class="form-hint">Nhóm cần đổi email nhận mặc định? Sửa hằng <code>FEEDBACK_EMAIL</code> trong <code>app.js</code>.</p>
+          <button class="button button-dark form-submit" type="submit">Mở email để gửi <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
